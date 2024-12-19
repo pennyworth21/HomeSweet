@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+/* New styles for header and dropdown */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+.project-name {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.project-name:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+}
